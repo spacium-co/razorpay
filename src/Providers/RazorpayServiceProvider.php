@@ -1,6 +1,6 @@
 <?php
 
-namespace Lakshmaji\Razorpay\Providers;
+namespace Spaciumco\Razorpay\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Razorpay\Api\Api;
