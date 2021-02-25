@@ -32,7 +32,7 @@
                 "Spaciumco\\Razorpay\\Providers\\PaymentServiceProvider"
             ],
             "aliases": {
-                "Razorpay": "Spacium-co\\Razorpay\\Razorpay"
+                "Razorpay": "Spaciumco\\Razorpay\\Razorpay"
             }
         }
     }
