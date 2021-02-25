@@ -6,7 +6,7 @@
 |--------------------------------------------------------------------------
 |
 */
-namespace Lakshmaji\Razorpay;
+namespace Spaciumco\Razorpay;
 use Razorpay\Api\Api;
 use Exception;
 

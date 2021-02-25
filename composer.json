@@ -1,13 +1,13 @@
 {
-    "name": "lakshmaji/razorpay",
+    "name": "spaciumco/razorpay",
     "description": "Razorpay payment integration for laravel",
     "keywords": [
         "Razorpay", "Laravel", "composer"
     ],
-    "homepage" : "https://github.com/lakshmaji/razorpay",
+    "homepage" : "https://github.com/spacium-co/razorpay",
     "support" : {
-        "source" : "https://github.com/lakshmaji/razorpay",
-        "issues" : "https://github.com/lakshmaji/razorpay/issues"
+        "source" : "https://github.com/spacium-co/razorpay",
+        "issues" : "https://github.com/spacium-co/razorpay/issues"
     },
     "require": {
         "razorpay/razorpay": "^2.2"
@@ -15,24 +15,24 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "lakshmaji",
-            "email": "lakshmajee88@gmail.com"
+            "name": "spacium",
+            "email": "spaciuminfotech@gmail.com"
         }
     ],
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "Lakshmaji\\Razorpay\\": "src/"
+            "Spaciumco\\Razorpay\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Lakshmaji\\Razorpay\\Providers\\RazorpayServiceProvider",
-                "Lakshmaji\\Razorpay\\Providers\\PaymentServiceProvider"
+                "Spaciumco\\Razorpay\\Providers\\RazorpayServiceProvider",
+                "Spaciumco\\Razorpay\\Providers\\PaymentServiceProvider"
             ],
             "aliases": {
-                "Razorpay": "Lakshmaji\\Razorpay\\Razorpay"
+                "Razorpay": "Spacium-co\\Razorpay\\Razorpay"
             }
         }
     }

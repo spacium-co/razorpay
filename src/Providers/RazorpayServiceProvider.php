@@ -11,7 +11,7 @@ use Razorpay\Api\Api;
  * Razorpay - ServicePrivider to support integration with 
  * Laravel framework
  *
- * @author     lakshmaji <lakshmajee88@gmail.com>
+ * @author     Spacium-co <Spacium-co@gmail.com>
  *             <contributor name> <contributor@your.email>
  * @package    Razorpay
  * @version    1.0.0
@@ -45,16 +45,15 @@ class RazorpayServiceProvider extends ServiceProvider
 
         if (method_exists(\Illuminate\Foundation\Application::class, 'singleton')) {
             $this->app->singleton('Razorpay\Api\Api', function($app) {
-                $config = $app->make('config');
-                $key = $config->get('razorpay.KEY_ID');
-                $secret = $config->get('razorpay.KEY_SECRET');
+                $key = env('RAZORPAY_KEY_ID');
+                $secret = env('RAZORPAY_KEY_SECRET');
                 return new Api($key, $secret);
             });
         } else {
             $this->app['razorpay'] = $this->app->share(function($app) {
                 $config = $app->make('config');
-                $key = $config->get('razorpay.KEY_ID');
-                $secret = $config->get('razorpay.KEY_SECRET');
+                $key = env('RAZORPAY_KEY_ID');
+                $secret = env('RAZORPAY_KEY_SECRET');
                 return new Api($key, $secret);
             });
         }

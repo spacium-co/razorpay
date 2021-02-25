@@ -1,6 +1,6 @@
 <?php
 
-namespace Lakshmaji\Razorpay\Providers;
+namespace Spaciumco\Razorpay\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Lakshmaji\Razorpay;
@@ -8,7 +8,7 @@ use Lakshmaji\Razorpay;
 /**
  * PaymentServiceProvider
  *
- * @author     lakshmaji <lakshmajee88@gmail.com>
+ * @author     Spacium-co <Spacium-co@gmail.com>
  * @version    1.0.0
  * @since      Class available since Release 1.0.0
  */
